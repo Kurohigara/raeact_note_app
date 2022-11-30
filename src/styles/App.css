@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.App {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 46px;
+  color: #635666;
+}
+
+.todo_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  background: #D3EBCD;
+  border-radius: 5px;
+  padding: 15px 25px;
+
+  opacity: 1;
+}
+
+.todo_title {
+  font-size: 23px;
+  color: #635666;
+}
+
+.todo_subtitle {
+  font-size: 17px;
+  color: rgba(99, 86, 102, 0.7);
+}
+
+.todo_btn {
+  padding: 5px 10px;
+  background-color: #FF7D7D;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: #ffffff;
+
+  transition: border 0.3s ease;
+}
+
+.todo_btn:hover {
+  border: 2px solid #635666;
+}
+
+.addTodo {
+  padding: 10px 20px;
+  background-color: #839AA8;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: #ffffff;
+
+  transition: border 0.3s ease;
+}
+
+.addTodo:hover {
+  border: 2px solid #635666;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.modal {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  margin: 13% auto;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.modal_input_title, .modal_input_title2 {
+  width: 450px;
+  margin-bottom: 10px;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.modal_input_title:focus, .modal_input_title2:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #D3EBCD;
+}
+
+.addTodo_btn {
+  padding: 5px 10px;
+  background-color: #839AA8;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: #ffffff;
+  margin-top: 40px;
+
+  transition: border 0.3s ease;
+}
+
+.addTodo_btn:hover {
+  border: 2px solid #635666;
+}
+
+.close_modal {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #839AA8;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #ffffff;
+
+  transition: background 0.3s ease;
+}
+
+.close_modal:hover {
+  background: #635666;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal_content {
+  padding-top: 110px;
+  text-align: center;
+}
+
+.close_modal {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
